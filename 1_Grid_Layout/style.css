@@ -1,0 +1,87 @@
+.container {
+    background-color: rgb(190, 188, 188);
+    width: 500px;
+    margin: 30px auto;
+    
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+
+    /*
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    */
+
+    /* We can use short-hand property for same gap */
+    grid-gap: 25px;
+}
+
+.item {
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.item--1 {
+    background-color: orangered;
+
+    /*
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    */
+
+    /* We can use short-hand 
+    property below or grid-area */
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    /* Since 3 comes on top of 1 */
+    z-index: 10;
+}
+
+.item--2 {
+    background-color: yellowgreen;
+
+    /* Way 1 */
+    grid-column: 1 / 3;
+    /* Way 2: Use span */
+    grid-column: 1 / span 2;
+    /* Way 3: Use span */
+    grid-column: 1 / span 3;
+    /* Way 4: Use -1(Means end) 
+    becasue span needs explicit 
+    specification of No. of cells */
+    grid-column: 3 / -1;
+    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+}
+
+.item--3 {
+    background-color: blueviolet;
+
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.item--4 {
+    background-color: palevioletred;
+}
+
+.item--5 {
+    background-color: royalblue;
+    
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.item--6 {
+    background-color: goldenrod;
+    
+    /*
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    */
+
+    /* We can use short-hand property */
+    grid-area: 1 / 2 / 2 / 3;
+}

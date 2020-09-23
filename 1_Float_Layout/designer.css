@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 30px;
+    background-color: rgb(251, 255, 0);
+}
+
+.navigation {
+    list-style: none;
+    float: left; 
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation li:first-child {
+    margin: 0;
+}
+
+.buttons {
+    float: right;
+}
+
+/* clear-fix for floating elements 
+   to keep the height of nav element */
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-main:link {
+    padding: 20px;
+    display: inline-block;
+}
