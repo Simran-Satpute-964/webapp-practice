@@ -1,0 +1,81 @@
+body { 
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    font-size: 20px;
+}
+
+.flex-container {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem;
+    grid-column-gap: 5rem;
+}
+
+.box {
+    background-image: linear-gradient(to bottom, black, white);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    opacity: 0.9;
+
+    display: grid;
+    grid-template-rows: 12rem 12rem;
+    grid-template-columns: 18rem;
+    grid-column-gap: 5rem;
+    border: 2px solid #000000;
+}
+
+img {
+    width: 7.5rem;
+    height: 120%;
+    transform: translateX(70%);
+    opacity: 0.8;
+
+    grid-row: 1 / 2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.box:hover img{
+    position: relative;
+    top: -80px;
+    opacity: 1;
+}
+
+.box:hover .card{
+    transform: scaleY(1.1);
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+/* .anime-1 {
+    background-color: green;
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.anime-2 {
+    background-color: green;
+   
+}
+
+.anime-3 {
+    background-color: green;
+    
+} */
+
+.card {
+    background-color: #ffffff;
+    z-index: 1;
+    grid-row: 2 / 3;
+    width: 99%;
+}
+
+p {
+    padding: 5px;
+}
