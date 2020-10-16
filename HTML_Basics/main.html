@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Basics</title>
+    <!-- meta tag specifies meta data about how to render the page or keywords that can be used for searches, in this case page rendering is viewport sized -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="" />
+</head>
+
+<body style="font-size: 30px;">
+    <nav>
+        <ul>
+            <li><a href="./index.html" target="_blank" rel="noreferrer noopener">Generic Link</a></li>
+            <li><a href="./index.html#helloDiv" target="_top">Recipe 1</a></li>
+            <li><a href="./index.html#helloDiv2">Recipe 2</a></li>
+            <li><a href="#lastElement">Go To Last Element</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <header>
+            <h1>Wired Brain!</h1>
+            <h2>Coffe to keep you productive</h2>
+        </header>
+        <div>
+            <!-- 
+                article : main article on the page, don't include ads
+                blockquote is a block element, 
+                q is inline element thus need to add <br/> 
+                abbr title is what we see on hover
+                cite : citations
+                sup : superscripts
+                sub : subscripts
+                &lt; : less than
+                &gt; : greater than
+                &copy; : copywrite character
+            -->
+            <blockquote><abbr title="Wired Brain">WB</abbr> Hello, coffee makes my brain work great!</blockquote>
+            <cite>Jamal&lt;Hooken, NJ&gt;</cite>
+
+            <p>
+                <q>I am productive<sup>3</sup> when I drink coffee<sub>3</sub>!</q> </br>
+                <cite>Matt&lt;Chicago&gt;</cite>
+            </p>
+        </div>
+
+        <div>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Cocoa</li>
+                <li>Chocolate</li>
+                <li>Bournvita</li>
+            </ul>
+            <ul>
+                <li>Cocoa</li>
+                <li>Chocolate</li>
+                <li>Bournvita</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Ingredients</h3>
+            <ol>
+                <li>Cocoa</li>
+                <li>Chocolate</li>
+                <li>Bournvita</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Ingredients</h3>
+            <dl>
+                <dt>Cocoa</dt>
+                <dd>Cocoa is a powder with chocolate flavour</dd>
+
+                <dt>Chocolate</dt>
+                <dd>Chocolate is a stuff with chocolate flavour</dd>
+
+                <dt>Bournvita</dt>
+                <dd>Bournvita is a powder with chocolate flavour</dd>
+        </div>
+        <hr />
+        <footer id="lastElement">
+            &copy; Milner 2019
+        </footer>
+    </article>
+</body>
+
+</html>
