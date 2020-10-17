@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Image</title>
+</head>
+
+<body>
+    <!--
+        Making images responsive using sizes attribute
+        https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images 
+    
+        Go to firefox developer tools - open responsive design mode    -->
+    <img src="./coman-640.jpg" srcset="coman-640.jpg 480w, pexels-sebastian-coman-photography-3625373.jpg 800w"
+        sizes="(max-width: 600px) 480px, 800px" height="400px" width="400px"
+        style="margin-left: auto; margin-right: auto;" />
+</body>
+
+</html>
