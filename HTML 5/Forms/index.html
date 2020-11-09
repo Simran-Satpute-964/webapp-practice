@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Fruit juice size</legend>
+            <p>
+                <input type="radio" name="size" id="size_1" value="small">
+                <label for="size_1">Small</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="medium">
+                <label for="size_2">Medium</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="large">
+                <label for="size_3">Large</label>
+            </p>
+        </fieldset>
+    </form>
+
+    <br /><hr><br />
+    <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+
+    <!-- So this: -->
+    <div>
+        <label for="username">Name:</label>
+        <input id="username" type="text" name="username">
+        <label for="username"><abbr title="required" aria-label="required">*</abbr></label>
+    </div>
+    <br />
+
+    <!-- would be better done like this: -->
+    <div>
+        <label for="username">
+            <span>Name:</span>
+            <input id="username" type="text" name="username">
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+    </div>
+    <br />
+    <!-- But this is probably best: -->
+    <div>
+        <label for="username">Name: <abbr title="required" aria-label="required">*</abbr></label>
+        <input id="username" type="text" name="username">
+    </div>
+    <br /><hr>
+
+
+    <br /><hr><br/>
+    <section>
+        <h2>Payment information</h2>
+        <p>
+          <label for="card">
+            <span>Card type:</span>
+          </label>
+          <select id="card" name="usercard">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="number">
+            <span>Card number:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="tel" id="number" name="cardnumber">
+        </p>
+        <p>
+          <label for="date">
+            <span>Expiration date:</span>
+            <strong><abbr title="required">*</abbr></strong>
+            <em>formatted as mm/dd/yyyy</em>
+          </label>
+          <input type="date" id="date" name="expiration">
+        </p>
+    </section>
+    <br /><hr>
+
+    <form style="margin: 0 auto;">
+      <p>
+        <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+        <label for="taste_1">I like cherry</label>
+      </p>
+      <p>
+        <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+        <label for="taste_2">I like banana</label>
+      </p>
+    </form>
+</body>
+
+</html>
